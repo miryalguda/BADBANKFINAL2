@@ -188,7 +188,7 @@ app.get("/gettrans", (req, res) => {
 
  mongoose.connect(process.env.MONGO_URI)
  .then( () => {
-     app.listen(process.env.PORT, () => {
+     app.listen(process.env.PORT || 4000, () => {
         console.log("Connected to DB and Server started on port 3260", process.env.PORT)
  })
 })

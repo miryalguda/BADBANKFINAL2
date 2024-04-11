@@ -8,7 +8,7 @@ const jwt  = require  ("jsonwebtoken")
 const cookieParser = require ("cookie-parser")
 const Trans = require("./model/Alldata.js")
 const Withdraw = require ("./model/withdrawModel.js")
-
+const path = require ("path")
 const dotenv = require('dotenv');
 dotenv.config();
 

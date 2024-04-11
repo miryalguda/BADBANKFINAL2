@@ -15,22 +15,20 @@ import CreateAccount from "./pages/CreateAccount.js";
 import Usersdata from "./pages/Usersdata.js";
 
 import NoMatch from "./pages/NoMatch.js";
-import Signup from "./signup1.js"
+import Signup from "./signup1.js";
 import Loginpage from "./pages/Loginpage2.js";
 import Code from "./pages/Code.js";
 
 import Transfers from "./pages/Transfers.js";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 export const UserContext = React.createContext(null);
 
 function LoginApp() {
-
-  let  email =  sessionStorage.getItem("email")
+  let email = sessionStorage.getItem("email");
   return (
     <>
-   
-        {<h1>Hello, {email}.  Welcome!!</h1>}
-       
+      {<h1>Hello, {email}. Welcome!!</h1>}
+
       <BrowserRouter>
         <UserContext.Provider
           value={{
@@ -45,11 +43,9 @@ function LoginApp() {
             ],
           }}
         >
-              
-
           <Routes>
             <Route path="/" element={<LoginButton />} />
-{/*
+            {/*
             <Route path="/CreateAccount" element={<CreateAccount />} />
         */}
 

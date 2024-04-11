@@ -1,7 +1,7 @@
 FROM node:14-slim
 
 
-# Step 3.1 - Add working directory
+
 LABEL maintainer student
 
 WORKDIR /app
@@ -11,15 +11,8 @@ WORKDIR /app
 COPY package.json .
 
 RUN npm install
-# Step 3.2 - Copy npm dependencies
-
-# Step 3.3 - Install dependencies
-
-# Copy app source code
-
 COPY . .
 
-#Expose port and start the application
 
 EXPOSE 3000
 

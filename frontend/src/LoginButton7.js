@@ -38,7 +38,6 @@ const LoginButton = () => {
           <button
             className="btn btn-lg btn-block mx-auto bg-danger text-center text-white p-3"
             onClick={() => navigate("/register")}
-            
           >
             Login
           </button>
